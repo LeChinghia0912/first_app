@@ -22,7 +22,16 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Trang chủ'),
+        leading: IconButton(
+          icon: const Icon(Icons.home),
+          onPressed: () {
+            // hành động cuủa icon
+          },
+        ),
+        title: const Center(
+          child: Text('Trang chủ'),
+        ),
+        backgroundColor: Colors.green,
       ),
       body: Center(
         child: ElevatedButton(
@@ -43,7 +52,10 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Màn hình thứ hai'),
+        title: const Center(
+          child: Text('Màn hình thứ hai'),
+        ),
+        backgroundColor: Colors.green,
       ),
       body: const Center(
         child: Text('Đây là màn hình thứ hai'),
